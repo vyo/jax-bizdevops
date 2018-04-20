@@ -1,0 +1,29 @@
+#   CI/CD<!-- .element: class="fragment shrink" data-fragment-index="1" -->
+
+### Continuous Integration<!-- .element: class="fragment" data-fragment-index="2" -->
+
+### Continuous Delivery/Deployment<!-- .element: class="fragment" data-fragment-index="3" -->
+
+vvv
+
+### General<!-- .element: class="fragment shrink" data-fragment-index="1" -->
+
+Continuously<!-- .element: class="fragment" data-fragment-index="2" -->
+  - build<!-- .element: class="fragment" data-fragment-index="2" -->
+  - test<!-- .element: class="fragment" data-fragment-index="3" -->
+  - deliver<!-- .element: class="fragment" data-fragment-index="4" -->
+  - deploy...<!-- .element: class="fragment" data-fragment-index="5" -->
+  - profile<!-- .element: class="fragment" data-fragment-index="6" -->
+  - update<!-- .element: class="fragment" data-fragment-index="7" -->
+
+vvv
+
+### Gitlab CI<!-- .element: class="fragment shrink" data-fragment-index="1" -->
+
+  - configuration as code<!-- .element: class="fragment" data-fragment-index="2" -->
+  - visual feedback<!-- .element: class="fragment" data-fragment-index="3" -->
+  - low barrier to entry<!-- .element: class="fragment" data-fragment-index="4" -->
+  - continuous...<!-- .element: class="fragment" data-fragment-index="5" -->
+  - ... all the things!<!-- .element: class="fragment" data-fragment-index="6" -->
+  - automagic<!-- .element: class="fragment" data-fragment-index="7" -->
+

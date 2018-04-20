@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>BizDevOps</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/solarized.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Gitlab Pipeline CSS -->
+  <link rel="stylesheet" href="css/gitlab.css">
+
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css'
+        : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+    <div class="gitlab small">
+      <ul class="pipeline">
+        <li class="stage">
+          <div class="title">Stage</div>
+          <ul class="jobs">
+            <li class="job success">
+              <div></div>
+              <div class="pipeline-step connector-right">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="status_success" width="100%" height="100%">
+                    <g fill-rule="evenodd">
+                    <path d="M0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7z">
+                    </path>
+                    <path d="M13 7A6 6 0 1 0 1 7a6 6 0 0 0 12 0z" fill="#FFF">
+                    </path>
+                    <path d="M6.278 7.697L5.045 6.464a.296.296 0 0 0-.42-.002l-.613.614a.298.298 0 0 0 .002.42l1.91 1.909a.5.5 0 0 0 .703.005l.265-.265L9.997 6.04a.291.291 0 0 0-.009-.408l-.614-.614a.29.29 0 0 0-.408-.009L6.278 7.697z">
+                    </path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="spacing"></div>
+                <div class="text">
+                  <span>first</span>
+                </div>
+              </div>
+            </li>
+            <li class="job running">
+              <div class="connector-right-curved-blend"></div>
+              <div class="pipeline-step connector-right-curved">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="status_running" width="100%" height="100%">
+                    <g fill-rule="evenodd">
+                    <path d="M0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7z">
+                    </path>
+                    <path d="M13 7A6 6 0 1 0 1 7a6 6 0 0 0 12 0z" fill="#FFF">
+                    </path>
+                    <path d="M7 3c2.2 0 4 1.8 4 4s-1.8 4-4 4c-1.3 0-2.5-.7-3.3-1.7L7 7V3">
+                    </path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="spacing"></div>
+                <div class="text">
+                  <span>second</span>
+                </div>
+              </div>
+            </li>
+            <li class="job failure">
+              <div class="connector-right-blend"></div>
+              <div class="pipeline-step connector-right-curved">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="status_failed" width="100%" height="100%">
+                    <g fill-rule="evenodd">
+                    <path d="M0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7z">
+                    </path>
+                    <path d="M13 7A6 6 0 1 0 1 7a6 6 0 0 0 12 0z" fill="#FFF">
+                    </path>
+                    <path d="M7 5.969L5.599 4.568a.29.29 0 0 0-.413.004l-.614.614a.294.294 0 0 0-.004.413L5.968 7l-1.4 1.401a.29.29 0 0 0 .004.413l.614.614c.113.114.3.117.413.004L7 8.032l1.401 1.4a.29.29 0 0 0 .413-.004l.614-.614a.294.294 0 0 0 .004-.413L8.032 7l1.4-1.401a.29.29 0 0 0-.004-.413l-.614-.614a.294.294 0 0 0-.413-.004L7 5.968z">
+                    </path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="spacing"></div>
+                <div class="text">
+                  <span>third</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="stage">
+          <div class="title">Stage</div>
+          <ul class="jobs">
+            <li class="job">
+              <div class="pipeline-step connector-left connector-right">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="status_manual" width="100%" height="100%">
+                    <g fill-rule="evenodd">
+                    <path d="M0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7z">
+                    </path>
+                    <path d="M13 7A6 6 0 1 0 1 7a6 6 0 0 0 12 0z" fill="#FFF">
+                    </path>
+                    <path d="M10.5 7.63V6.37l-.787-.13c-.044-.175-.132-.349-.263-.61l.481-.652-.918-.913-.657.478a2.346 2.346 0 0 0-.612-.26L7.656 3.5H6.388l-.132.783c-.219.043-.394.13-.612.26l-.657-.478-.918.913.437.652c-.131.218-.175.392-.262.61l-.744.086v1.261l.787.13c.044.218.132.392.263.61l-.438.651.92.913.655-.434c.175.086.394.173.613.26l.131.783h1.313l.131-.783c.219-.043.394-.13.613-.26l.656.478.918-.913-.48-.652c.13-.218.218-.435.262-.61l.656-.13zM7 8.283a1.285 1.285 0 0 1-1.313-1.305c0-.739.57-1.304 1.313-1.304.744 0 1.313.565 1.313 1.304 0 .74-.57 1.305-1.313 1.305z">
+                    </path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="spacing"></div>
+                <div class="text">
+                  <span>fourth</span>
+                </div>
+              </div>
+            </li>
+            <li class="job">
+              <div class="connector-left-curved-blend connector-right-curved-blend"></div>
+              <div class="pipeline-step connector-left-curved connector-right-curved">
+                <div class="icon"></div>
+                <div class="spacing"></div>
+                <div class="text">
+                  <span>fifth</span>
+                </div>
+              </div>
+            </li>
+            <li class="job">
+              <div class="connector-left-blend connector-right-blend"></div>
+              <div class="pipeline-step connector-left-curved connector-right-curved">
+                <div class="icon"></div>
+                <div class="spacing"></div>
+                <div class="text">
+                  <span>sixth</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="stage">
+          <div class="title">Stage</div>
+          <ul class="jobs">
+            <li class="job">
+              <div class="pipeline-step connector-left connector-right">
+                <div class="icon"></div>
+                <div class="spacing"></div>
+                <div class="text">
+                  <span>seventh</span>
+                </div>
+              </div>
+            </li>
+            <li class="job">
+              <div class="connector-left-curved-blend"></div>
+              <div class="pipeline-step connector-left-curved">
+                <div class="icon"></div>
+                <div class="spacing"></div>
+                <div class="text">
+                  <span>eigth</span>
+                </div>
+              </div>
+            </li>
+            <li class="job">
+              <div class="connector-left-blend"></div>
+              <div class="pipeline-step connector-left-curved">
+                <div class="icon"></div>
+                <div class="spacing"></div>
+                <div class="text">
+                  <span>ninth</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="stage">
+          <div class="title">Stage</div>
+          <ul class="jobs">
+            <li class="job success">
+              <div class="pipeline-step connector-left">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="status_success" width="100%" height="100%">
+                    <g fill-rule="evenodd">
+                    <path d="M0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7z">
+                    </path>
+                    <path d="M13 7A6 6 0 1 0 1 7a6 6 0 0 0 12 0z" fill="#FFF">
+                    </path>
+                    <path d="M6.278 7.697L5.045 6.464a.296.296 0 0 0-.42-.002l-.613.614a.298.298 0 0 0 .002.42l1.91 1.909a.5.5 0 0 0 .703.005l.265-.265L9.997 6.04a.291.291 0 0 0-.009-.408l-.614-.614a.29.29 0 0 0-.408-.009L6.278 7.697z">
+                    </path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="status_success" width="100%" height="100%">
+                    <g fill-rule="evenodd">
+                    <path d="M0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7z">
+                    </path>
+                    <path d="M13 7A6 6 0 1 0 1 7a6 6 0 0 0 12 0z" fill="#FFF">
+                    </path>
+                    <path d="M6.278 7.697L5.045 6.464a.296.296 0 0 0-.42-.002l-.613.614a.298.298 0 0 0 .002.42l1.91 1.909a.5.5 0 0 0 .703.005l.265-.265L9.997 6.04a.291.291 0 0 0-.009-.408l-.614-.614a.29.29 0 0 0-.408-.009L6.278 7.697z">
+                    </path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="status_success" width="100%" height="100%">
+                    <g fill-rule="evenodd">
+                    <path d="M0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7z">
+                    </path>
+                    <path d="M13 7A6 6 0 1 0 1 7a6 6 0 0 0 12 0z" fill="#FFF">
+                    </path>
+                    <path d="M6.278 7.697L5.045 6.464a.296.296 0 0 0-.42-.002l-.613.614a.298.298 0 0 0 .002.42l1.91 1.909a.5.5 0 0 0 .703.005l.265-.265L9.997 6.04a.291.291 0 0 0-.009-.408l-.614-.614a.29.29 0 0 0-.408-.009L6.278 7.697z">
+                    </path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="status_success" width="100%" height="100%">
+                    <g fill-rule="evenodd">
+                    <path d="M0 7a7 7 0 1 1 14 0A7 7 0 0 1 0 7z">
+                    </path>
+                    <path d="M13 7A6 6 0 1 0 1 7a6 6 0 0 0 12 0z" fill="#FFF">
+                    </path>
+                    <path d="M6.278 7.697L5.045 6.464a.296.296 0 0 0-.42-.002l-.613.614a.298.298 0 0 0 .002.42l1.91 1.909a.5.5 0 0 0 .703.005l.265-.265L9.997 6.04a.291.291 0 0 0-.009-.408l-.614-.614a.29.29 0 0 0-.408-.009L6.278 7.697z">
+                    </path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <section>BizDevOps</section>
+    <section>Shameless Plug</section>
+  </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+  // More info about config & dependencies:
+  // - https://github.com/hakimel/reveal.js#configuration
+  // - https://github.com/hakimel/reveal.js#dependencies
+  Reveal.initialize({
+    dependencies: [
+      {src: 'plugin/markdown/marked.js'},
+      {src: 'plugin/markdown/markdown.js'},
+      {src: 'plugin/notes/notes.js', async: true},
+      {
+        src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+        hljs.initHighlightingOnLoad();
+      }
+      }
+    ]
+  });
+</script>
+</body>
+</html>

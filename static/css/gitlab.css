@@ -1,0 +1,300 @@
+.gitlab {
+  background-color: #f6f6f6;
+  height: 300px;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+
+  transition: height 1s ease;
+}
+.gitlab.minimal {
+  height: 100px;
+  transition: height 1s ease;
+}
+.gitlab .pipelines {
+  flex: 0 0 auto;
+  height: 100%;
+  /* width: 120%; */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.gitlab .pipeline-step {
+  padding: 8px 10px 9px;
+  border: 1px solid #e5e5e5;
+  border-radius: 30px;
+  background-color: #fff;
+  text-align: justify;
+  margin: 0 auto;
+  position: relative;
+  height: 18px;
+  /* width: 90px; */
+  width: 130px;
+  margin-bottom: 5px;
+  white-space: normal;
+  font-size: medium;
+  display: flex;
+}
+.gitlab .pipeline .stage:not(:first-child) .jobs .job:first-child .connector-left::before {
+  content: '';
+  position: absolute;
+  top: 48%;
+  left: -44px;
+  border-top: 2px solid #e5e5e5;
+  width: 44px;
+  height: 1px;
+}
+.gitlab .pipeline .stage:not(:last-child) .jobs .job:first-child .connector-right::after {
+  content: '';
+  position: absolute;
+  top: 48%;
+  right: -44px;
+  border-top: 2px solid #e5e5e5;
+  width: 44px;
+  height: 1px;
+}
+.gitlab:not(.minimal) .pipeline .stage:not(:first-child) .jobs .job:not(:first-child) .connector-left-curved::before {
+/* .gitlab .connector-left-curved::before { */
+  content: '';
+  position: absolute;
+  left: -27px;
+  border-radius: 0 0 0 20px;
+  border-left: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  transition: border-bottom 1s ease .5s;
+  transition: border-left 1s ease .5s;
+  top: -15px;
+  width: 25px;
+  height: 33px;
+}
+.gitlab:not(.minimal) .connector-left-curved::before {
+/* .gitlab:hover .connector-left-curved::before { */
+  border-bottom: 0px none transparent;
+  transition: border-bottom 1s ease .5s;
+  border-right: 0px none transparent;
+  transition: border-right 1s ease .5s;
+  border-left: 0px none transparent;
+  transition: border-left 1s ease .5s;
+  border-top: 0px none transparent;
+  transition: border-top 1s ease .5s;
+}
+.gitlab:not(.minimal) .pipeline .stage:not(:last-child) .jobs .job:not(:first-child) .connector-right::after {
+/* .gitlab .connector-right-curved::after { */
+  content: '';
+  position: absolute;
+  right: -27px;
+  border-radius: 0 0 20px 0;
+  border-right: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  transition: border-right 1s ease .5s;
+  transition: border-bottom 1s ease .5s;
+  top: -15px;
+  width: 25px;
+  height: 33px;
+}
+/* .gitlab:hover .connector-right-curved::after { */
+/*   border-bottom: 0px none transparent; */
+/*   transition: border-bottom 1s ease .5s; */
+/*   border-right: 0px none transparent; */
+/*   transition: border-right 1s ease .5s; */
+/*   border-left: 0px none transparent; */
+/*   transition: border-left 1s ease .5s; */
+/*   border-top: 0px none transparent; */
+/*   transition: border-top 1s ease .5s; */
+/* } */
+.gitlab:not(.minimal) .pipeline .stage:not(:first-child) .jobs .job:not(:first-child) .connector-left-blend::before {
+/* .gitlab .connector-left-blend::before { */
+  content: '';
+  position: absolute;
+  left: -26px;
+  border-right: 2px solid #e5e5e5;
+  transition: border-right 1s ease .5s;
+  top: -50px;
+  height: 45px;
+}
+/* .gitlab:hover .connector-left-blend::before { */
+/*   border-bottom: 0px none transparent; */
+/*   transition: border-bottom 1s ease .5s; */
+/*   border-right: 0px none transparent; */
+/*   transition: border-right 1s ease .5s; */
+/*   border-left: 0px none transparent; */
+/*   transition: border-left 1s ease .5s; */
+/*   border-top: 0px none transparent; */
+/*   transition: border-top 1s ease .5s; */
+/* } */
+.gitlab:not(.minimal) .pipeline .stage:not(:first-child) .jobs .job:not(:first-child) .connector-right-blend::after {
+/* .gitlab .connector-right-blend::after { */
+  content: '';
+  position: absolute;
+  right: -26px;
+  border-left: 2px solid #e5e5e5;
+  transition: border-left 1s ease .5s;
+  top: -50px;
+  height: 45px;
+}
+/* .gitlab:hover .connector-right-blend::after { */
+/*   border-bottom: 0px none transparent; */
+/*   transition: border-bottom 1s ease .5s; */
+/*   border-right: 0px none transparent; */
+/*   transition: border-right 1s ease .5s; */
+/*   border-left: 0px none transparent; */
+/*   transition: border-left 1s ease .5s; */
+/*   border-top: 0px none transparent; */
+/*   transition: border-top 1s ease .5s; */
+/* } */
+.gitlab:not(.minimal) .pipeline .stage:not(:first-child) .jobs .job:nth-child(2) .connector-left-curved-blend::before {
+/* .gitlab .connector-left-curved-blend::before { */
+  content: '';
+  position: absolute;
+  left: -47px;
+  border-radius: 0 20px 0 0;
+  border-top: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  transition: border-top 1s ease .5s;
+  transition: border-right 1s ease .5s;
+  top: -32px;
+  width: 21px;
+  height: 25px;
+}
+/* .gitlab:hover .connector-left-curved-blend::before { */
+/*   border-bottom: 0px none transparent; */
+/*   transition: border-bottom 1s ease .5s; */
+/*   border-right: 0px none transparent; */
+/*   transition: border-right 1s ease .5s; */
+/*   border-left: 0px none transparent; */
+/*   transition: border-left 1s ease .5s; */
+/*   border-top: 0px none transparent; */
+/*   transition: border-top 1s ease .5s; */
+/* } */
+.gitlab:not(.minimal) .pipeline .stage:not(:first-child) .jobs .job:nth-child(2) .connector-right-curved-blend::after {
+/* .gitlab .connector-right-curved-blend::after { */
+  content: '';
+  position: absolute;
+  right: -47px;
+  border-radius: 20px 0 0 0;
+  border-top: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+  transition: border-top 1s ease .5s;
+  transition: border-left 1s ease .5s;
+  top: -32px;
+  width: 21px;
+  height: 25px;
+}
+/* .gitlab:hover .connector-right-curved-blend::after { */
+/*   border-bottom: 0px none transparent; */
+/*   transition: border-bottom 1s ease .5s; */
+/*   border-right: 0px none transparent; */
+/*   transition: border-right 1s ease .5s; */
+/*   border-left: 0px none transparent; */
+/*   transition: border-left 1s ease .5s; */
+/*   border-top: 0px none transparent; */
+/*   transition: border-top 1s ease .5s; */
+/* } */
+.gitlab .pipeline, .gitlab .jobs {
+  list-style-type: none;
+}
+.gitlab .stage, .gitlab .job {
+  height: 50px;
+  position: relative;
+}
+.gitlab .job {
+  max-height: 50px;
+  transition: max-height 2s ease;
+}
+.gitlab.minimal .job {
+/* .gitlab:hover .job { */
+  max-height: 0px;
+  transition: max-height 2s ease;
+}
+.gitlab:not(.minimal) .stage:not(:first-child) {
+  margin-left: 45px;
+  transition: margin-left 1s ease;
+}
+.gitlab.minimal .stage:not(:first-child) {
+/* .gitlab:hover .stage:not(:first-child) { */
+  margin-left: 0px;
+  transition: margin-left 1s ease;
+}
+.gitlab .stage:first-child {
+  margin-left: -45px;
+  transition: margin-left 1s ease;
+}
+.gitlab .stage:last-child {
+  margin-right: 45px;
+  transition: margin-right 1s ease;
+}
+.gitlab .stage {
+  /* display: inline-block; */
+  float:left;
+  color: #3e3e3e;
+}
+.gitlab .stage .title {
+  text-align: center;
+  font-size: large;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.gitlab .job .icon {
+  width: 25%;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+.gitlab:not(.minimal) .job.summary {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.gitlab.minimal .job.summary {
+  opacity: 1;
+  transition: opacity 1s ease 0.5s;
+}
+/* .gitlab.minimal .job .icon { */
+ /* .gitlab:hover .job .icon { */
+  /* opacity: 0; */
+  /* transition: opacity 1s ease .5s; */
+/* } */
+.gitlab .job .spacing {
+  width: 0%;
+}
+.gitlab .job .text {
+  width: 65%;
+  opacity: 1;
+  transition: opacity 1s ease .5s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ .gitlab.minimal .job .text {
+ /* .gitlab:hover .job .text { */
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.slides {
+  top: 30% !important;
+  transition: top 1s ease;
+}
+.slides.minimal {
+  top: 50% !important;
+  transition: top 1s ease;
+}
+/* .gitlab .job ~ .success svg { */
+.success svg {
+  fill: #229922;
+}
+/* .gitlab .job ~ .failure svg { */
+.failed svg {
+  fill: #dd5555;
+}
+.skipped svg {
+  fill: #aaaaaa;
+}
+.warning svg {
+  fill: #fc9403;
+}
+/* .gitlab .job ~ .running svg { */
+.running svg {
+  fill: #2266bb;
+}
