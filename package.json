@@ -4,7 +4,7 @@
   "description": "BizDevOps JAX slides + Gitlab CI AutoMagic",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "keywords": [
     "gitlab",
@@ -23,10 +23,7 @@
     "good-bunyan": "^2.0.0",
     "hapi": "^17.3.1",
     "inert": "^5.1.0",
-    "mz": "^2.7.0",
-    "nodemon": "^1.17.3",
     "request": "^2.85.0",
-    "request-promise": "^4.2.2",
-    "standardjs": "^1.0.0-alpha"
+    "request-promise": "^4.2.2"
   }
 }
