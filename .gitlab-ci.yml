@@ -60,14 +60,10 @@ build:
     - branches
 
 test:
-  services:
-    - postgres:latest
+  image: node:9-alpine
   stage: test
-  image: gliderlabs/herokuish:latest
   script:
-    - setup_test_db
-    - cp -R . /tmp/app
-    - /bin/herokuish buildpack test
+    - npm test
   only:
     - branches
 
