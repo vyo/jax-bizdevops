@@ -1,3 +1,8 @@
 exclude_patterns:
 - "node_modules/"
 - "/code/node_modules/"
+- "/code/static/*.md"
+- "/code/static/lib/"
+- "/code/static/img/"
+- "/code/static/plugin/"
+- "/code/static/js/reveal.js"
