@@ -71,7 +71,7 @@ test:
   only:
     - branches
 
-codequality:
+.codequality:
   image: docker:latest
   variables:
     DOCKER_DRIVER: overlay2
@@ -83,6 +83,16 @@ codequality:
     - codeclimate
   artifacts:
     paths: [codeclimate.json]
+
+standardjs:
+  image: node:9-alpine
+  allow_failure: true
+  stage: test
+  script:
+    - npm install standard --global
+    - standard
+  only:
+    - branches
 
 performance:
   stage: performance
