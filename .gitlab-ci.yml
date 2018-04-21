@@ -24,7 +24,7 @@
 # `.buildpacks` that contains the URLs, one on each line, in order.
 # Note: Auto CI does not work with multiple buildpacks yet
 
-image: alpine:latest
+image: alpine:3.7
 
 variables:
   # AUTO_DEVOPS_DOMAIN is the application deployment domain and should be set as a variable at the group or project level.
@@ -264,7 +264,7 @@ production:
     url: http://$CI_PROJECT_PATH_SLUG.$AUTO_DEVOPS_DOMAIN
   artifacts:
     paths: [environment_url.txt]
- when: manual
+  when: manual
   only:
     refs:
       - master
