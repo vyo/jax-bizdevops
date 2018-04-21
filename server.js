@@ -18,7 +18,7 @@ const options = {
     bunyan: [{
       module: 'good-bunyan',
       args: [
-      { ops: '*', response: '*', log: '*', error: '*', request: '*' },
+        { ops: '*', response: '*', log: '*', error: '*', request: '*' },
         {
           logger: Logger,
           levels: {

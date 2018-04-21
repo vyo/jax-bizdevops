@@ -156,4 +156,3 @@ setInterval(() => {
 }, 3000)
 
 setTimeout(() => clearInterval(updatePipelines), 1000)
-
