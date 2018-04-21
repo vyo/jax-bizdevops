@@ -3,16 +3,16 @@
 // const Promise =  require('bluebird')
 const Request = require('request-promise')
 
-const projectID = process.env['BDO_PROJECT_ID']
-const projectGroup = process.env['BDO_PROJECT_GROUP']
-const projectName = process.env['BDO_PROJECT_NAME']
+const projectID = process.env['BDO_PROJECT_ID'] || '2'
+const projectGroup = process.env['BDO_PROJECT_GROUP'] || 'root'
+const projectName = process.env['BDO_PROJECT_NAME'] || 'bdo'
 
 const APIBaseURI = 'https://gitlab.henningp.de/api/v4'
 const DeployBoardURI = `https://gitlab.henningp.de/${projectGroup}/${projectName}/environments.json`
 
 const Options = {
   headers: {
-    'Private-Token': process.env['BDO_ACCESS_TOKEN']
+    'Private-Token': process.env['BDO_ACCESS_TOKEN'] || 'pi885N9dt3XrmuBaLGxs'
   },
   json: true
 }
