@@ -9,7 +9,7 @@ const Logger = Bunyan.createLogger({ name: 'bizdevops', level: 'trace' })
 const Gitlab = require('./gitlab')
 
 const server = Hapi.server({
-  host: 'localhost',
+  host: '0.0.0.0',
   port: 8000
 })
 
