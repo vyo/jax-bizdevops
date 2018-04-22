@@ -3,6 +3,9 @@
 const Hapi = require('hapi')
 const Bunyan = require('bunyan')
 const Good = require('good')
+const Healthy = require('hapi-and-healthy')
+const Self = require('./package')
+const Env = process.env.NODE_ENV||'DEV'
 
 const Logger = Bunyan.createLogger({ name: 'bizdevops', level: 'trace' })
 
@@ -87,6 +90,16 @@ async function start () {
       plugin: Good,
       options: options
     })
+    await server.register({
+      plugin: Healthy,
+      options: {
+        path: '/api/health',
+        env: Env,
+        name: Self.name,
+        version: Self.version
+      }
+    }
+    )
     await rest()
     await files()
     await server.start()
