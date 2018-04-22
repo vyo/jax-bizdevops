@@ -9,7 +9,7 @@ vvv
 
 #   Links<!-- .element: class="fragment shrink" data-fragment-index="1" -->
 
-  - [Slides (jax-bizdevops.henningp.de/slides.html)](https://jax-bizdevops.henningp.de/slides.html)
+  - [Slides (jax-bizdevops.henningp.de/slides.html)](http://jax-bizdevops.henningp.de/slides.html)
 
   - [Auto DevOps (docs.gitlab.com/ee/topics/autodevops/)](https://docs.gitlab.com/ee/topics/autodevops/)
 
