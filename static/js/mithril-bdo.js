@@ -224,4 +224,7 @@ document.addEventListener('keydown', (event) => {
     toggleGitlabView()
   }
 }, true)
-// setTimeout(() => clearInterval(updatePipelines), 1000)
+setTimeout(() => {
+  toggleGitlabView()
+  toggleGitlabView()
+}, 500)
