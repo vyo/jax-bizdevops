@@ -10,3 +10,8 @@
 
 `= review app`<!-- .element: class="fragment" data-fragment-index="5" -->
 
+NOTES
+now:  Manu
+
+next: Henning
+
