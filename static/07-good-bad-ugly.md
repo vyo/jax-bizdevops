@@ -18,6 +18,10 @@ now:  Manu
 
 next: Henning
 
+super quick first results with literally zero config
+
+but only for popular tech stacks => Heroku
+
 vvv
 
 ##  Code Climate
@@ -27,6 +31,8 @@ NOTES
 now:  Manu
 
 next: Henning
+
+but it's slow as molasses and needs proper config...
 
 vvv
 
@@ -40,6 +46,8 @@ next: Henning
 
 Includes static Docker image container
 
+but based on a 3rd party Docker image and currently broken in AutoDevOps (our version, current version should be fixed)
+
 vvv
 
 ##  Dynamic Application Security Testing 
@@ -50,6 +58,8 @@ now:  Henning
 next: Henning
 
 Powered by OWASP Zap
+
+but based on a poor 3rd party Docker image so it's broken right now
 
 vvv
 
