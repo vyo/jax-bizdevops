@@ -4,6 +4,7 @@ const Hapi = require('hapi')
 const Bunyan = require('bunyan')
 const Good = require('good')
 const Healthy = require('hapi-and-healthy')
+const Auth = require('hapi-auth-basic')
 const Self = require('./package')
 const Env = process.env.NODE_ENV || 'DEV'
 
@@ -38,10 +39,24 @@ const options = {
   }
 }
 
+const validate = async (request, username, password, h) => {
+  if (username === 'speaker' && password === 'Speaker Notes are cute *.*') {
+    return { credentials: {id: 'speaker', name: 'JAX BDO Speaker'}, isValid: true }
+  } else {
+    return { credentials: {}, isValid: false }
+  }
+}
+
 const rest = async () => {
   server.route({
     method: 'GET',
     path: '/api/hello',
+    config: {
+      auth: {
+        strategy: 'simple',
+        mode: 'optional'
+      }
+    },
     handler: function (request, h) {
       return 'hello world'
     }
@@ -50,6 +65,12 @@ const rest = async () => {
   server.route({
     method: 'GET',
     path: '/api/pipelines',
+    config: {
+      auth: {
+        strategy: 'simple',
+        mode: 'optional'
+      }
+    },
     handler: function (request, h) {
       const detailedRaw = request.query.detailed
       const detailed = `${detailedRaw}`.toLowerCase() === 'true'
@@ -64,6 +85,12 @@ const rest = async () => {
   server.route({
     method: 'GET',
     path: '/api/deployments',
+    config: {
+      auth: {
+        strategy: 'simple',
+        mode: 'optional'
+      }
+    },
     handler: function (request, h) {
       return Gitlab.deployments()
     }
@@ -74,6 +101,12 @@ const files = async () => {
   server.route({
     method: 'GET',
     path: '/{param*}',
+    config: {
+      auth: {
+        strategy: 'simple',
+        mode: 'try'
+      }
+    },
     handler: {
       directory: {
         path: 'static',
@@ -83,8 +116,40 @@ const files = async () => {
   })
 }
 
+const slides = async () => {
+  server.route({
+    method: 'GET',
+    path: '/slides.html',
+    handler: {
+      file: 'static/slides.html'
+    }
+  })
+}
+
+const notes = async () => {
+  server.route({
+    method: 'GET',
+    path: '/plugin/notes/{param*}',
+    config: {
+      auth: {
+        strategy: 'simple',
+        mode: 'required'
+      }
+    },
+    handler: {
+      directory: {
+        path: 'static/plugin/notes',
+        index: ['index.html', 'notes.html']
+      }
+    }
+  })
+}
+
 async function start () {
   try {
+    await server.register(Auth)
+    server.auth.strategy('simple', 'basic', { validate: validate, allowEmptyUsername: true })
+    server.auth.default('simple')
     await server.register(require('inert'))
     await server.register({
       plugin: Good,
@@ -98,10 +163,11 @@ async function start () {
         name: Self.name,
         version: Self.version
       }
-    }
-    )
+    })
     await rest()
+    await slides()
     await files()
+    await notes()
     await server.start()
   } catch (err) {
     server.log(err)

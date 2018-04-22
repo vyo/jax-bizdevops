@@ -1,6 +1,6 @@
 {
   "name": "bizdevops",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "BizDevOps JAX slides + Gitlab CI AutoMagic",
   "main": "server.js",
   "scripts": {
@@ -23,6 +23,7 @@
     "good-bunyan": "^2.0.0",
     "hapi": "^17.3.1",
     "hapi-and-healthy": "^6.0.1",
+    "hapi-auth-basic": "^5.0.0",
     "inert": "^5.1.0",
     "request": "^2.85.0",
     "request-promise": "^4.2.2"
