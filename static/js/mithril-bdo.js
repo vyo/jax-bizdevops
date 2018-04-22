@@ -164,19 +164,42 @@ const pipelines = {
     ))
   )
 }
-
 m.mount(gitlab, pipelines)
-const updatePipelines = setInterval(async () => {
+// const updatePipelines = setInterval(async () => {
+setInterval(async () => {
   await Pipelines.load()
   m.render(pipelines)
-  // m.redraw()
 }, 2000)
 
-setInterval(() => {
+const toggleGitlabView = () => {
   gitlab.className = gitlab.className.includes('minimal') ? gitlab.className.replace(/ ?minimal/, '') : `${gitlab.className} minimal`
   slides.className = slides.className.includes('minimal') ? slides.className.replace(/ ?minimal/, '') : `${slides.className} minimal`
-  // slides.style.top = '30% !important'
-  // slides.style.top = slides.className.includes('minimal') ? '30% !important' : '50% !important'
-}, 3000)
+}
 
+toggleGitlabView()
+
+const toggleFullScreenMode = (on) => {
+  if (on) {
+    slides.className = `${slides.className} fullscreen`
+  } else {
+    slides.className = slides.className.replace(/ ?fullscreen/, '')
+  }
+  // slides.className = slides.className.includes('fullscreen') ? slides.className.replace(/ ?fullscreen/, '') : `${slides.className} fullscreen`
+}
+document.addEventListener('keydown', (event) => {
+  if (event.keyCode === 70) {
+    toggleFullScreenMode(true)
+  }
+}, false)
+document.addEventListener('keydown', (event) => {
+  if (event.keyCode === 13) {
+    toggleFullScreenMode(false)
+  }
+}, false)
+
+document.addEventListener('keydown', (event) => {
+  if (event.keyCode === 71) {
+    toggleGitlabView()
+  }
+}, false)
 // setTimeout(() => clearInterval(updatePipelines), 1000)
