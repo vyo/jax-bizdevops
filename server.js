@@ -5,7 +5,7 @@ const Bunyan = require('bunyan')
 const Good = require('good')
 const Healthy = require('hapi-and-healthy')
 const Self = require('./package')
-const Env = process.env.NODE_ENV||'DEV'
+const Env = process.env.NODE_ENV || 'DEV'
 
 const Logger = Bunyan.createLogger({ name: 'bizdevops', level: 'trace' })
 
