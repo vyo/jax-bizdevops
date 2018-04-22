@@ -156,6 +156,7 @@ m.mount(gitlab, pipelines)
 const updatePipelines = setInterval(async () => {
   await Pipelines.load()
   m.render(pipelines)
+  m.redraw()
 }, 2000)
 
 setInterval(() => {
