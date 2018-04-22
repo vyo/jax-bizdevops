@@ -267,12 +267,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
- .gitlab.minimal .job .text {
+.gitlab.minimal .job .text {
  /* .gitlab:hover .job .text { */
   opacity: 0;
   transition: opacity 1s ease;
 }
-.slides {
+.gitlab + .reveal .slides {
   top: 20% !important;
   transition: top 0.5s linear;
   left: 50% !important;
@@ -280,7 +280,7 @@
   transform: scale(0.75) translate(-65%, -50%) !important;
   transition: transform 0.5s linear;
 }
-.slides.minimal {
+.gitlab + .reveal .slides.minimal {
   top: 40% !important;
   transition: top 0.5s linear;
   left: 50% !important;
@@ -288,7 +288,7 @@
   transform: scale(0.95) translate(-55%, -50%) !important;
   transition: transform 0.5s linear;
 }
-.slides.fullscreen {
+.gitlab + .reveal .slides.fullscreen {
   top: 40% !important;
   transition: top 0.5s linear;
   left: -65% !important;
@@ -296,7 +296,7 @@
   transform: scale(0.75) translate(45%, -50%) !important;
   transition: transform 0.5s linear;
 }
-.slides.minimal.fullscreen {
+.gitlab + .reveal .slides.minimal.fullscreen {
   top: 60% !important;
   left: 0% !important;
   transition: left 0.5s linear;
@@ -331,9 +331,9 @@
 .progress {
   bottom: auto !important;
 }
-.controls:not(.minimal) {
+.gitlab + .reveal .controls:not(.minimal) {
   bottom: 275px !important;
 }
-.controls.minimal {
+.gitlab + .reveal .controls.minimal {
   bottom: 125px !important;
 }

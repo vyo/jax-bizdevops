@@ -165,7 +165,12 @@ const pipelines = {
     ))
   )
 }
-m.mount(gitlab, pipelines)
+
+if (window.top === window.self) {
+  m.mount(gitlab, pipelines)
+} else {
+  gitlab.remove()
+}
 // const updatePipelines = setInterval(async () => {
 
 const toggleFullScreenMode = (on) => {
