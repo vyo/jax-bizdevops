@@ -122,6 +122,9 @@ const slides = async () => {
   server.route({
     method: 'GET',
     path: '/slides.html',
+    config: {
+      auth: false
+    },
     handler: {
       file: 'static/slides.html'
     }
