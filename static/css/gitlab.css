@@ -328,3 +328,12 @@
 .pending svg {
   fill: #fc9403;
 }
+.progress {
+  bottom: auto !important;
+}
+.controls:not(.minimal) {
+  bottom: 275px !important;
+}
+.controls.minimal {
+  bottom: 125px !important;
+}

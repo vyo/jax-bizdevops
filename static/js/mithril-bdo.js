@@ -135,6 +135,7 @@ const Pipelines = {
 
 const gitlab = document.getElementById('gitlab')
 const slides = document.getElementById('slides')
+let controls = document.getElementsByClassName('controls')[0]
 
 const pipelines = {
   oninit: Pipelines.load,
@@ -193,6 +194,11 @@ setInterval(() => {
 const toggleGitlabView = () => {
   gitlab.className = gitlab.className.includes('minimal') ? gitlab.className.replace(/ ?minimal/, '') : `${gitlab.className} minimal`
   slides.className = slides.className.includes('minimal') ? slides.className.replace(/ ?minimal/, '') : `${slides.className} minimal`
+  if (controls) {
+    controls.className = controls.className.includes('minimal') ? controls.className.replace(/ ?minimal/, '') : `${controls.className} minimal`
+  } else {
+    controls = document.getElementsByClassName('controls')[0]
+  }
 }
 
 toggleGitlabView()
