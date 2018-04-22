@@ -7,6 +7,8 @@ const Healthy = require('hapi-and-healthy')
 const Auth = require('hapi-auth-basic')
 const Self = require('./package')
 const Env = process.env.NODE_ENV || 'DEV'
+const OS = require('os')
+const host = OS.hostname()
 
 const Logger = Bunyan.createLogger({ name: 'bizdevops', level: 'trace' })
 
@@ -159,6 +161,7 @@ async function start () {
       plugin: Healthy,
       options: {
         path: '/api/health',
+        id: host,
         env: Env,
         name: Self.name,
         version: Self.version
@@ -170,11 +173,14 @@ async function start () {
     await notes()
     await server.start()
   } catch (err) {
-    server.log(err)
+    server.log('error', err)
     process.exit(1)
   }
 
-  server.log('Server running at:', server.info.uri)
+  server.log('info', host)
+  server.log('info', server.info.uri)
+  server.log('info', Self.name)
+  server.log('info', Self.version)
 };
 
 start()
