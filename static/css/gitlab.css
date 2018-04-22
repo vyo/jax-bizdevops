@@ -298,3 +298,6 @@
 .running svg {
   fill: #2266bb;
 }
+.created svg {
+  fill: #c4c4c4;
+}
