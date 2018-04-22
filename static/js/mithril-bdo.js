@@ -117,7 +117,10 @@ const Pipelines = {
         })
 
         pipe.jobs.forEach(job => {
-          if (!stages[stageMap[job.stage]].find(it => it.name === job.name)) {
+          const previousJobIndex = stages[stageMap[job.stage]].findIndex(it => it.name === job.name)
+          if (previousJobIndex !== -1) {
+            stages[stageMap[job.stage]][previousJobIndex] = job
+          } else {
             stages[stageMap[job.stage]].push(job)
           }
         })
