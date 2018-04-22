@@ -362,6 +362,10 @@ production:
       # for all tracks get number of replicas from `CANARY_PRODUCTION_REPLICAS`
       eval new_replicas=\$${env_track}_${env_slug}_REPLICAS
     fi
+    if [[ "$track" == "canary" ]]; then
+      # for stable track get number of replicas from `PRODUCTION_REPLICAS`
+      service_enabled="true"
+    fi
     if [[ -n "$new_replicas" ]]; then
       replicas="$new_replicas"
     fi
