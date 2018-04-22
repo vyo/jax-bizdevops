@@ -3,9 +3,9 @@
 // const Promise =  require('bluebird')
 const Request = require('request-promise')
 
-const projectID = process.env['BDO_PROJECT_ID'] || '2'
-const projectGroup = process.env['BDO_PROJECT_GROUP'] || 'root'
-const projectName = process.env['BDO_PROJECT_NAME'] || 'bdo'
+const projectID = process.env['BDO_PROJECT_ID'] || '4'
+const projectGroup = process.env['BDO_PROJECT_GROUP'] || 'jax'
+const projectName = process.env['BDO_PROJECT_NAME'] || 'bizdevops'
 
 const APIBaseURI = 'https://gitlab.henningp.de/api/v4'
 const DeployBoardURI = `https://gitlab.henningp.de/${projectGroup}/${projectName}/environments.json`
