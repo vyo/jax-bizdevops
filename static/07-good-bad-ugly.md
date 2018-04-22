@@ -5,18 +5,14 @@
 #   Bad<!-- .element: class="fragment" data-fragment-index="2" -->
 
 NOTES
-now:  Manu
-
-next: Manu
+**Manu**
 
 vvv
 
 ##  Auto DevOps is magic
 
 NOTES
-now:  Manu
-
-next: Henning
+**Manu**
 
 super quick first results with literally zero config
 
@@ -28,9 +24,7 @@ vvv
 ### => Quality First<!-- .element: class="fragment"-->
 
 NOTES
-now:  Manu
-
-next: Henning
+**Manu** -> Henning
 
 but it's slow as molasses and needs proper config...
 
@@ -40,9 +34,7 @@ vvv
 ### => Security First<!-- .element: class="fragment"-->
 
 NOTES
-now:  Henning
-
-next: Henning
+**Henning**
 
 Includes static Docker image container
 
@@ -53,9 +45,7 @@ vvv
 ##  Dynamic Application Security Testing 
 
 NOTES
-now:  Henning
-
-next: Henning
+**Henning**
 
 Powered by OWASP Zap
 
@@ -66,27 +56,21 @@ vvv
 ##  You better like using Google Cloud Platform
 
 NOTES
-now:  Henning
-
-next: Henning
+**Henning**
 
 vvv
 
 ##  Documentation is spotty
 
 NOTES
-now:  Henning
-
-next: Henning
+**Henning**
 
 vvv
 
 ##  Frequent Updates
 
 NOTES
-now:  Henning
-
-next: Manu
+**Henning** -> Manu
 
 A lot of changes and fixes every few days
 

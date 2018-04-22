@@ -7,9 +7,7 @@
 ### (SEVEN PRINCIPLES AG)<!-- .element: class="fragment" data-fragment-index="4" -->
 
 NOTES
-now:  Manu
-
-next: Manu
+**Manu**
 
 vvv
 
@@ -22,9 +20,7 @@ Automation Engineer<!-- .element: class="fragment shrink" data-fragment-index="1
   * get-shit-done evangelist<!-- .element: class="fragment" data-fragment-index="3" -->
 
 NOTES
-now:  Manu
-
-next: Henning
+**Manu** -> Henning
 
 vvv
 
@@ -37,7 +33,5 @@ fancy title<!-- .element: class="fragment shrink" data-fragment-index="1" -->
   * awesome work<!-- .element: class="fragment" data-fragment-index="3" -->
 
 NOTES
-now:  Henning
-
-next: Manu
+**Henning** -> Manu
 

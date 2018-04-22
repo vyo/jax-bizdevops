@@ -5,16 +5,12 @@
 #   Ops<!-- .element: class="fragment" data-fragment-index="2" -->
 
 NOTES
-now:  Manu
-
-next: Manu
+**Manu**
 
 vvv
 
 ### Und noch viel weiter.<!-- .element: class="fragment grow fade-out" -->
 
 NOTES
-now:  Manu
-
-next: Manu
+**Manu**
 

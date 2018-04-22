@@ -5,9 +5,7 @@
 ### There are a lot.<!-- .element: class="fragment" data-fragment-index="3" -->
 
 NOTES
-now:  Manu
-
-next: Manu
+**Manu**
 
 vvv
 
@@ -20,9 +18,7 @@ vvv
 ### Team City<!-- .element: class="fragment" data-fragment-index="4" -->
 
 NOTES
-now:  Manu
-
-next: Manu
+**Manu**
 
 vvv
 
@@ -35,9 +31,7 @@ vvv
 ### Shippable<!-- .element: class="fragment" data-fragment-index="4" -->
 
 NOTES
-now:  Manu
-
-next: Henning
+**Manu** -> Henning
 
 vvv
 
@@ -52,9 +46,7 @@ vvv
 ### Heroku<!-- .element: class="fragment" data-fragment-index="5" -->
 
 NOTES
-now:  Henning
-
-next: Henning
+**Henning**
 
 vvv
 
@@ -65,7 +57,5 @@ vvv
 ### SonarQube<!-- .element: class="fragment" data-fragment-index="3" -->
 
 NOTES
-now:  Henning
-
-next: Henning + Manu
+**Henning** -> Henning, Manu
 
