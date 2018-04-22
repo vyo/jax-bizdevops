@@ -7,9 +7,10 @@ RUN apk add --update --no-cache python
 ADD package.json .
 ADD package-lock.json .
 
+RUN apk add --update make
 RUN npm install
 
-ADD static .
+ADD static static/.
 ADD gitlab.js .
 ADD server.js .
 
