@@ -1,4 +1,4 @@
-#   Good<!-- .element: class="fragment" data-fragment-index="1" -->
+#   Good
 
 #   *Ugly*<!-- .element: class="fragment" data-fragment-index="3" -->
 
