@@ -166,7 +166,7 @@ m.mount(gitlab, pipelines)
 const updatePipelines = setInterval(async () => {
   await Pipelines.load()
   m.render(pipelines)
-  m.redraw()
+  // m.redraw()
 }, 2000)
 
 setInterval(() => {
@@ -176,4 +176,4 @@ setInterval(() => {
   // slides.style.top = slides.className.includes('minimal') ? '30% !important' : '50% !important'
 }, 3000)
 
-setTimeout(() => clearInterval(updatePipelines), 1000)
+// setTimeout(() => clearInterval(updatePipelines), 1000)
