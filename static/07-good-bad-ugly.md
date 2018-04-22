@@ -20,7 +20,8 @@ next: Henning
 
 vvv
 
-##  Code Climate is nice
+##  Code Climate
+### => Quality First<!-- .element: class="fragment"-->
 
 NOTES
 now:  Manu
@@ -29,25 +30,26 @@ next: Henning
 
 vvv
 
-##  Static Application Security Testing is really nice
+##  Static Application Security Testing
 ### => Security First<!-- .element: class="fragment"-->
-### => Container Checks<!-- .element: class="fragment"-->
 
 NOTES
 now:  Henning
 
 next: Henning
+
+Includes static Docker image container
 
 vvv
 
-##  Dynamic Application Security Testing is really nice
-### => Security First<!-- .element: class="fragment"-->
-### => Powered by OWASP<!-- .element: class="fragment"-->
+##  Dynamic Application Security Testing 
 
 NOTES
 now:  Henning
 
 next: Henning
+
+Powered by OWASP Zap
 
 vvv
 
@@ -65,5 +67,18 @@ vvv
 NOTES
 now:  Henning
 
+next: Henning
+
+vvv
+
+##  Frequent Updates
+
+NOTES
+now:  Henning
+
 next: Manu
+
+A lot of changes and fixes every few days
+
+=> update roulette...
 
