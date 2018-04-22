@@ -301,3 +301,6 @@
 .created svg {
   fill: #c4c4c4;
 }
+.pending svg {
+  fill: #fc9403;
+}
