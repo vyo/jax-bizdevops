@@ -123,7 +123,7 @@ sast:
   artifacts:
     paths: [gl-sast-report.json]
 
-sast:container:
+.sast:container:
   image: docker:stable
   variables:
     DOCKER_DRIVER: overlay2
