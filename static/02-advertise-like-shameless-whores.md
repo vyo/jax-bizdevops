@@ -26,11 +26,11 @@ vvv
 
 ### Henning Pautsch
 
-fancy title<!-- .element: class="fragment shrink" data-fragment-index="1" -->
+LASER (Lead Anarchist of Super Efficient Reducing)<!-- .element: class="fragment shrink" data-fragment-index="1" -->
 
-  * interesting fact<!-- .element: class="fragment" data-fragment-index="1" -->
-  * mad skill<!-- .element: class="fragment" data-fragment-index="2" -->
-  * awesome work<!-- .element: class="fragment" data-fragment-index="3" -->
+  * what he said<!-- .element: class="fragment" data-fragment-index="1" -->
+  * open minded<!-- .element: class="fragment" data-fragment-index="2" -->
+  * in a complicated relationship with k8s<!-- .element: class="fragment" data-fragment-index="3" -->
 
 NOTES
 **Henning** -> Manu
