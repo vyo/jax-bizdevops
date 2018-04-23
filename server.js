@@ -53,12 +53,6 @@ const rest = async () => {
   server.route({
     method: 'GET',
     path: '/api/hello',
-    config: {
-      auth: {
-        strategy: 'simple',
-        mode: 'optional'
-      }
-    },
     handler: function (request, h) {
       return 'hello world'
     }
@@ -67,12 +61,6 @@ const rest = async () => {
   server.route({
     method: 'GET',
     path: '/api/pipelines',
-    config: {
-      auth: {
-        strategy: 'simple',
-        mode: 'optional'
-      }
-    },
     handler: function (request, h) {
       const detailedRaw = request.query.detailed
       const detailed = `${detailedRaw}`.toLowerCase() === 'true'
@@ -87,33 +75,8 @@ const rest = async () => {
   server.route({
     method: 'GET',
     path: '/api/deployments',
-    config: {
-      auth: {
-        strategy: 'simple',
-        mode: 'optional'
-      }
-    },
     handler: function (request, h) {
       return Gitlab.deployments()
-    }
-  })
-}
-
-const files = async () => {
-  server.route({
-    method: 'GET',
-    path: '/{param*}',
-    config: {
-      auth: {
-        strategy: 'simple',
-        mode: 'try'
-      }
-    },
-    handler: {
-      directory: {
-        path: 'static',
-        index: ['index.html', 'default.html']
-      }
     }
   })
 }
@@ -121,17 +84,17 @@ const files = async () => {
 const slides = async () => {
   server.route({
     method: 'GET',
-    path: '/slides.html',
-    config: {
-      auth: false
-    },
+    path: '/{param*}',
     handler: {
-      file: 'static/slides.html'
+      directory: {
+        path: 'static',
+        index: ['slides.html']
+      }
     }
   })
 }
 
-const notes = async () => {
+const speaker = async () => {
   server.route({
     method: 'GET',
     path: '/plugin/notes/{param*}',
@@ -153,13 +116,19 @@ const notes = async () => {
 async function start () {
   try {
     await server.register(Auth)
-    server.auth.strategy('simple', 'basic', { validate: validate, allowEmptyUsername: true })
-    server.auth.default('simple')
+    server.auth.strategy('simple', 'basic', { validate: validate, allowEmptyUsername: true, default: false })
+
+    await rest()
+
     await server.register(require('inert'))
     await server.register({
       plugin: Good,
       options: options
     })
+
+    await slides()
+    await speaker()
+
     await server.register({
       plugin: Healthy,
       options: {
@@ -170,13 +139,11 @@ async function start () {
         version: Self.version
       }
     })
-    await rest()
-    await slides()
-    await files()
-    await notes()
+
     await server.start()
   } catch (err) {
     server.log('error', err)
+    console.log(err)
     process.exit(1)
   }
 
