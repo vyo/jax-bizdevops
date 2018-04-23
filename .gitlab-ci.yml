@@ -342,7 +342,13 @@ production:
     name="$CI_ENVIRONMENT_SLUG"
 
     # if [[ "$track" != "stable" ]]; then
-    if [[ "$track" != "stable" ]] && [[ "$track" != "canary" ]]; then
+    if [[ "$track" == "stable" ]]
+    then
+      name="$name"
+    elif [[ "$track" == "canary" ]]
+    then
+      name="$name"
+    else
       name="$name-$track"
     fi
 
