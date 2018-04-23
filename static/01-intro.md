@@ -14,3 +14,5 @@ vvv
 NOTES
 **Manu**
 
+'Freude ist bekanntlich nur ein Mangel an Information.' und wir haben in den letzten Wochen viele, viele Informationen gesammelt
+
