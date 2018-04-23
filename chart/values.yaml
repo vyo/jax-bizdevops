@@ -15,7 +15,7 @@ service:
   enabled: true
   name: web
   type: ClusterIP
-  url: https://henningp.de
+  url: http://henningp.de
   externalPort: 5000
   internalPort: 5000
 resources:
