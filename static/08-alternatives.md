@@ -36,15 +36,13 @@ NOTES
 
 vvv
 
-#   Orchestration/Infrastructure<!-- .element: class="fragment shrink" data-fragment-index="1" -->
+#   Orchestration<!-- .element: class="fragment shrink" data-fragment-index="1" -->
 
 ### Nomad<!-- .element: class="fragment" data-fragment-index="2" -->
 
-### OpenShift<!-- .element: class="fragment" data-fragment-index="3" -->
+### Rancher<!-- .element: class="fragment" data-fragment-index="3" -->
 
-### AWS<!-- .element: class="fragment" data-fragment-index="4" -->
-
-### Heroku<!-- .element: class="fragment" data-fragment-index="5" -->
+### Heroku<!-- .element: class="fragment" data-fragment-index="4" -->
 
 NOTES
 **Henning**
