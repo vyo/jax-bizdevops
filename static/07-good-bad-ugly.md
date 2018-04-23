@@ -5,6 +5,7 @@
 #   Bad<!-- .element: class="fragment" data-fragment-index="2" -->
 
 NOTES
+**40:00**
 **Manu**
 
 vvv

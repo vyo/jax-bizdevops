@@ -1,6 +1,7 @@
 #   Thanks a bunch.<!-- .element: class="fragment shrink" data-fragment-index="1" -->
 
 NOTES
+**50:00*
 **Henning, Manu**
 
 any questions?

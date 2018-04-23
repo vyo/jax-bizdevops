@@ -11,5 +11,6 @@
 `= review app`<!-- .element: class="fragment" data-fragment-index="5" -->
 
 NOTES
+**15:00**
 **Manu** -> Henning
 
