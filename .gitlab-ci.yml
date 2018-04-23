@@ -341,7 +341,8 @@ production:
     track="${1-stable}"
     name="$CI_ENVIRONMENT_SLUG"
 
-    if [[ "$track" != "stable" ]]; then
+    # if [[ "$track" != "stable" ]]; then
+    if [[ "$track" != "stable" ]] && [[ "$track" != "canary" ]]; then
       name="$name-$track"
     fi
 
