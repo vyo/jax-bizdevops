@@ -37,10 +37,11 @@ vvv
 
 NOTES
 **Henning**
-
-Includes static Docker image container
-
-but based on a 3rd party Docker image and currently broken in AutoDevOps (our version, current version should be fixed)
+- wichtig für contin. release
+- Includes static Docker image container
+- but based on a 3rd party Docker image and currently broken in AutoDevOps (our version, current version should be fixed)
+- 10.7 (sonntag) dropped nodejs
+- 10.6.4 ging
 
 vvv
 
@@ -48,10 +49,10 @@ vvv
 
 NOTES
 **Henning**
-
-Powered by OWASP Zap
-
-but based on a poor 3rd party Docker image so it's broken right now
+- ebenfalls wichtig
+- owasp zap (zed attack proxy)
+- vielversprechend (logs); aber fail
+- but based on a poor 3rd party Docker image so it's broken right now
 
 vvv
 
@@ -59,6 +60,9 @@ vvv
 
 NOTES
 **Henning**
+- kubernetes versch. (Standalone, Rancher, KubeAdmin); fail
+- kein feedback
+- zum jetzigen Zeitpunkt! (Gitlab!)
 
 vvv
 
@@ -66,6 +70,9 @@ vvv
 
 NOTES
 **Henning**
+- Unvollständig (beta)
+- Keine Details (beta)
+- Nur 1 Weg (beta)
 
 vvv
 
@@ -74,7 +81,5 @@ vvv
 NOTES
 **Henning** -> Manu
 
-A lot of changes and fixes every few days
-
-=> update roulette...
-
+- Viele Releases (häufige breaking changes)
+- positiv wie negativ; fazit: spannend

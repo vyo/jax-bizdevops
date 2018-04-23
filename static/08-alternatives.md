@@ -47,6 +47,12 @@ vvv
 
 NOTES
 **Henning**
+- nomad (hashicorp stack)
+- rancher (kubernetes)
+- heroku (full service)
+- Kubernetes direkt (kubectl, helm)
+- spring cloud netflix
+- aktiv im Einsatz
 
 vvv
 
@@ -58,4 +64,6 @@ vvv
 
 NOTES
 **Henning** -> Henning, Manu
-
+- code climate standalone
+- sonarqube
+- uvm.

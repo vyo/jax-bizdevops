@@ -4,6 +4,11 @@ NOTES
 **25:00**
 
 **Henning** -> Manu
+- neue version, vorher test
+- bluegreen/ A/B --> explain
+- "daneben" -> weniger risiko (x%, rollback), mehr ressourcen
+- versch. strategien (random, local)
+- kohlemine, kanarienvögel (gas)
 
 vvv
 
