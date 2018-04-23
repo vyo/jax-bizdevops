@@ -129,7 +129,6 @@ const Pipelines = {
       })
       Pipelines.list = pipelines || Pipelines.list
     }
-    console.log(Pipelines.list)
   }
 }
 
