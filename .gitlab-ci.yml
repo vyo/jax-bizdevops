@@ -107,7 +107,7 @@ performance:
     - sitespeed-results/
   only:
     refs:
-      - branches
+      - master
     kubernetes: active
 
 sast:
