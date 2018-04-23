@@ -1,6 +1,6 @@
 {
   "name": "bizdevops",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "BizDevOps JAX slides + Gitlab CI AutoMagic",
   "main": "server.js",
   "scripts": {
