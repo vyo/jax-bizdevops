@@ -14,5 +14,5 @@ vvv
 
   - [Auto DevOps (docs.gitlab.com/ee/topics/autodevops/)](https://docs.gitlab.com/ee/topics/autodevops/)
 
-  - [SEVEN PRINCIPLES (7p-group.com)](https://7p-group.com)
+  - [SEVEN PRINCIPLES AG (7p-group.com)](https://7p-group.com)
 
