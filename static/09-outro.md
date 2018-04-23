@@ -9,6 +9,14 @@ any questions?
 
 vvv
 
+#   Special mentions<!-- .element: class="fragment shrink" data-fragment-index="1" -->
+
+  - Demotivation by Nico Semsrott
+  - Gitlab for extended Enterprise Trail
+  - Our parents. We wouldn't be here without them.
+
+vvv
+
 #   Links<!-- .element: class="fragment shrink" data-fragment-index="1" -->
 
   - [Slides (jax-bizdevops.henningp.de/slides.html)](http://jax-bizdevops.henningp.de/slides.html)
