@@ -7,6 +7,7 @@ const Healthy = require('hapi-and-healthy')
 const Auth = require('hapi-auth-basic')
 const Self = require('./package')
 const Env = process.env.NODE_ENV || 'DEV'
+const Port = process.env.PORT || 5000
 const OS = require('os')
 const host = OS.hostname()
 
@@ -16,7 +17,7 @@ const Gitlab = require('./gitlab')
 
 const server = Hapi.server({
   host: '0.0.0.0',
-  port: 5000
+  port: Port
 })
 
 const options = {
